@@ -4,7 +4,7 @@ class Song
 
   def initialize(name)
   @name = name
-  @@songs << self
+  self.class.all << self
   end
 
   def self.all #class reader method that reads the data stored in class variable @@all#
