@@ -36,7 +36,7 @@ end
 def self.alphabetical
     @@all.sort_by {|song| song.alphabetical}
   end
-end
+
 
 def self.destroy_all
   self.all.clear
