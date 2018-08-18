@@ -34,8 +34,7 @@ def self.find_by_name(name)
 end
 
 def self.alphabetical
-    @@all = @@all.sort
-    @@all
+    @@all.sort_by {|song| song.descending}
   end
 
 
