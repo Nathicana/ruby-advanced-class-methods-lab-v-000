@@ -2,10 +2,9 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
-
-  def self.all #class reader method that reads the data stored in class variable @@all#
+def self.all #class reader method that reads the data stored in class variable @@all#
     @@all
-  end
+end
 
   def save
     self.class.all << self
@@ -19,6 +18,7 @@ class Song
 
 def self.new_by_name(name)
   @name = name
+  @@all << self
 end
 
 def self.create_by_name(name)
