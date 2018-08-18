@@ -11,9 +11,14 @@ class Song
   end
 
   def self.create
-     @name = name
+     
     @@all << self
-    name
+    
   end
+
+  def self.find_by_name(name)
+      self.all.find{|person| person.name == name}
+    end
+
 
 end
