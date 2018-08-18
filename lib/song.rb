@@ -15,5 +15,5 @@ class Song
     @@all << self
     self
   end
-  
+
 end
