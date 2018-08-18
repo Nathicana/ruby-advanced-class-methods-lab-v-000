@@ -26,9 +26,14 @@ class Song
   end
 
   def self.create
+
     @@songs << self.new
+    @@songs
   end
 
+def self.new_by_name(name)
+  @name = name
+end
 
 def self.find_by_name(name)
   @@songs.find{|song| song.name == name}
