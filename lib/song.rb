@@ -35,7 +35,7 @@ end
 
 def self.alphabetical
     self.all.each do |song|
-      song.name = song.name.split(" ").collect{|w| w.alphabetize}.join(" ")
+      song.name = song.name.split(" ").collect{|w| w.alphabetical}.join(" ")
     end
   end
 
