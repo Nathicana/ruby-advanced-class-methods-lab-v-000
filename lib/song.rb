@@ -2,7 +2,7 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
-  def self.all
+  def self.all #class reader method that reads the data stored in class variable @@all#
     @@all
   end
 
@@ -10,7 +10,7 @@ class Song
     self.class.all << self
   end
 
-  def self.create
+  def self.create(name)
      @name = name
     @@all << self
     name
