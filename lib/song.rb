@@ -10,15 +10,16 @@ class Song
     self.class.all << self
   end
 
-  def self.create
-
-    @@all << self
+  def self.create(name)
+    song = self.new 
+    song.name = name
+    @@all << song
 
   end
 
-  def self.find_by_name(name)
-      self.all.find{|song| song.name == name}
-    end
+def self.find_by_name(name)
+  self.all.find{|song| song.name == name}
+end
 
 def self.destroy_all
   self.all.clear
