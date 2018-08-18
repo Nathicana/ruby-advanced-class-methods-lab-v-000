@@ -34,10 +34,9 @@ def self.find_by_name(name)
 end
 
 def self.alphabetical
-    self.all.each do |song|
-      song.name = song.name.split(" ").collect{|w| w.alphabetical}.join(" ")
-    end
+    @@all.sort_by {|song| song.alphabetical}
   end
+end
 
 def self.destroy_all
   self.all.clear
