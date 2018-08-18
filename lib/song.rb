@@ -9,7 +9,7 @@ class Song
       data = row.split(", ")
       name = data[0]
       artist_name = data[2]
-      song = self.new 
+      song = self.new
       song.name = name
       song.artis_name = artist_name
       song
