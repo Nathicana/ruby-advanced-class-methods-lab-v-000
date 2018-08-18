@@ -1,6 +1,6 @@
 class Song
   attr_accessor :name, :artist_name
-  @@songs = []
+  @@all = []
 
 
    def self.new_from_filename(name, artist_name)
@@ -18,7 +18,7 @@ class Song
   end
 
   def self.all #class reader method that reads the data stored in class variable @@all#
-    @@songs
+    @@all
   end
 
   def save
@@ -27,8 +27,8 @@ class Song
 
   def self.create
 
-    @@songs << self.new
-    @@songs
+    @@all<< self.new
+    @@all
   end
 
 def self.new_by_name(name)
@@ -36,7 +36,7 @@ def self.new_by_name(name)
 end
 
 def self.find_by_name(name)
-  @@songs.find{|song| song.name == name}
+  @@all.find{|song| song.name == name}
 end
 
 def self.destroy_all
