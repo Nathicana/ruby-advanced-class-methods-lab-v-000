@@ -2,10 +2,6 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
 
-  def initialize(name)
-      @name = name
-
-    end
 
   def self.all #class reader method that reads the data stored in class variable @@all#
     @@all
