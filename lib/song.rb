@@ -4,11 +4,17 @@ class Song
 
 
    def self.new_from_filename(name, artist_name)
-     
-
-  def initialize(name)
-  @name = name
-  self.class.all << self
+     rows = file_data.split("\n")
+    songs = rows.collect do |row|
+      data = row.split(", ")
+      name = data[0]
+      artist_name = data[2]
+      song = self.new 
+      song.name = name
+      song.artis_name = artist_name
+      song
+    end
+  songs
   end
 
   def self.all #class reader method that reads the data stored in class variable @@all#
@@ -19,8 +25,8 @@ class Song
     self.class.all << self
   end
 
-  def self.create 
-    @@song << self.new 
+  def self.create
+    @@song << self.new
   end
 
 
