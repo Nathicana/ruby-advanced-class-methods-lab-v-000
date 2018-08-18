@@ -33,6 +33,12 @@ def self.find_by_name(name)
   @@all.find{|song| song.name == name}
 end
 
+def self.alphabetical
+    self.all.each do |song|
+      song.name = song.name.split(" ").collect{|w| w.alphabetize}.join(" ")
+    end
+  end
+
 def self.destroy_all
   self.all.clear
 end
