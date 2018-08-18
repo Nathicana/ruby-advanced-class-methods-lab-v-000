@@ -26,8 +26,7 @@ def self.new_by_name(name)
 def self.create_by_name(name)
   song = self.new
   song.name = name
-  song
-  @@all << song
+  @@all << self
   end
 
 def self.find_by_name(name)
