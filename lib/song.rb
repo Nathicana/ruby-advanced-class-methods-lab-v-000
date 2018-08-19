@@ -40,7 +40,7 @@ def self.find_or_create_by_name(name)
 if  song.find_by_name(name) == false
   song.create_by_name(name)
 end
-
+end
 
 
 def self.alphabetical
