@@ -56,10 +56,10 @@ def self.alphabetical
    artistname = filename[1]
    new_song.artist_name = artistname
    new_song.name = songname
- end 
- 
-end
+ end
 
+end
+end
 
 
 
