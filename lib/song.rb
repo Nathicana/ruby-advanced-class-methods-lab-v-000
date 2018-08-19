@@ -25,9 +25,9 @@ def self.new_by_name(name)
 
 
 def self.create_by_name(name)
-  @@all << song = self.new
+  @@all <<  self.new
 
-  
+
 
   end
 
