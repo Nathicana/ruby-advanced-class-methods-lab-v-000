@@ -50,7 +50,7 @@ def self.alphabetical
   end
 
   def self.new_from_filename(filename)
-    file = filename.split(/([-.])/)
+    file = filename.split(/([-])/)
    artist_name = file[0]
    dash = file[1]
    name = file[2]
@@ -58,7 +58,7 @@ def self.alphabetical
    filetype = file[4]
 
    new_song = self.new
-   new_song.name = name.strip
+   new_song.name = name
    new_song
  end
 
