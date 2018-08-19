@@ -37,8 +37,8 @@ end
 
 def self.find_or_create_by_name(name)
 
-  song.create_by_name(name) unless 
-  song.find_by_name(name) == true
+if  song.find_by_name(name) == false
+  song.create_by_name(name)
 end
 
 
