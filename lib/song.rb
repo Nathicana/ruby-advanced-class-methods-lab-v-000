@@ -51,8 +51,8 @@ def self.alphabetical
 
   def self.new_from_filename(filename)
     file = filename.split(" - ")
-    artist_name = file[0].strip
-    name = file[1].strip.gsub(".mp3", "")
+    artist_name = file[0]
+    name = file[1].gsub(".mp3", "")
 
 
 
