@@ -50,13 +50,13 @@ def self.alphabetical
   end
 
   def self.new_from_filename(filename)
-    new_songs = filename.split("-")
-   song_name = filename[0]
-   artist_name = filename[1]
+    file = filename.split("-")
+   songname = file[0]
+   artistname = file[1]
 
    new_song = self.new
-   new_song.artist_name = artist_name
-   new_song.song_name = song_name
+   new_song.artistname = artistname
+   new_song.songname = songname
    new_song
  end
 
