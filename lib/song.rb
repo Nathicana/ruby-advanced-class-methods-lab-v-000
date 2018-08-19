@@ -54,11 +54,9 @@ def self.alphabetical
    artist_name = file[0]
    dash = file[1]
    space = file[2]
-   space2 = file[3]
-   space3 = file[4]
-   name = file[2]
-   period = file[6]
-   filetype = file[7]
+   name = file[3]
+   period = file[4]
+   filetype = file[5]
 
    new_song = self.new
    new_song.name = name
