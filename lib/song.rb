@@ -50,17 +50,14 @@ def self.alphabetical
   end
 
   def self.new_from_filename(filename)
-    file = filename.split("\n")
-  # For each row, let's collect a Person instance based on the data
-   songs = file.collect do |file|
-    # Split the row into 2 parts, name, and file type at the  ". "
-    data = row.split(". ")
-    name = data[0]
-    file_type = data[1]
-    song = self.new
-    song.name = name
-    song
-  end
+    new_song = Song.new
+   filename = filename.split(/[-]/)
+   songname = filename[1].strip
+   artistname = filename[0].strip
+   new_song.artist_name = artistname
+   new_song.name = songname
+ end 
+ 
 end
 
 
