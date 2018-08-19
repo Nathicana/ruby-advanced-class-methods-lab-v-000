@@ -53,8 +53,7 @@ def self.alphabetical
     new_song = Song.new
    filename = filename.split(/[-]/)
    songname = filename[0]
-   artistname = filename[1]
-   new_song.artist_name = artistname
+   
    new_song.name = songname
  end
 
