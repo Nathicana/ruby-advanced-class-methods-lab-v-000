@@ -58,7 +58,7 @@ def self.alphabetical
 
 
    new_song = self.new
-   new_song.name = name.strip
+   new_song.name = name.strip(.mp3)
    new_song
  end
 
