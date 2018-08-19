@@ -58,8 +58,7 @@ def self.alphabetical
    new_song.name = songname
  end
 
-end
-end
+
 
 
 
