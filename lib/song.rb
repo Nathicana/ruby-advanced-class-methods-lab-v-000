@@ -51,7 +51,7 @@ def self.alphabetical
 
   def self.new_from_filename(filename)
     file = filename.split(/([-])/)
-   artist_name = file[0]
+   artist_name = file[0].strip
    dash = file[1]
    name = file[2]
    period = file[3]
