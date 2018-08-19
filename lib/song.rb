@@ -50,7 +50,7 @@ def self.alphabetical
   end
 
   def self.new_from_filename(filename)
-    file = filename.split(/(^a-zA-Z0-9'])/)
+    file = filename.split(/([-.])/)
    artist_name = file[0]
    dash = file[1]
    space = file[2]
