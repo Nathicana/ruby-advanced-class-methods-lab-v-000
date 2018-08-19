@@ -55,9 +55,10 @@ def self.alphabetical
    dash = file[1]
    space = file[2]
    space2 = file[3]
-   name = file[4]
-   period = file[5]
-   filetype = file[6]
+   space3 = file[4]
+   name = file[5]
+   period = file[6]
+   filetype = file[7]
 
    new_song = self.new
    new_song.name = name
