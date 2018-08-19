@@ -28,9 +28,7 @@ def self.create_by_name(name)
   song = self.new
   song.name = name
   @@all << song
-
-
-  end
+end
 
 def self.find_by_name(name)
 self.all.find{|song| song.name == name}
