@@ -56,7 +56,7 @@ def self.alphabetical
    space = file[2]
    space2 = file[3]
    space3 = file[4]
-   name = file[6]
+   name = file[1]
    period = file[6]
    filetype = file[7]
 
