@@ -57,14 +57,14 @@ def self.alphabetical
     data = row.split(". ")
     name = data[0]
     file_type = data[1]
-    song = self.new 
+    song = self.new
     song.name = name
     song
   end
 end
 
 
-    
+
 
 
 def self.destroy_all
