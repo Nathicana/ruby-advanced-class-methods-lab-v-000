@@ -53,7 +53,7 @@ def self.alphabetical
     file = filename.split(/([.-])/)
     artist_name = file[0].strip
    dash = file[1].strip
-   name = file[0].strip
+   name = file[1].strip
 
 
 
