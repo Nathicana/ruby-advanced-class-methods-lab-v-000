@@ -61,7 +61,7 @@ def self.alphabetical
  end
 
 
-    
+
 
 
 def self.destroy_all
