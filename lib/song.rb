@@ -58,7 +58,7 @@ def self.alphabetical
 
 
    new_song = self.new
-   new_song.name = name.split(/([.])/)
+   new_song.name = name.strip
    new_song
  end
 
