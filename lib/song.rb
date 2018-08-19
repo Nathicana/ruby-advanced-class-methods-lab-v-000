@@ -58,7 +58,7 @@ def self.alphabetical
    filetype = file[4]
 
    new_song = self.new
-   new_song.name = name.string
+   new_song.name = name.strip
    new_song
  end
 
