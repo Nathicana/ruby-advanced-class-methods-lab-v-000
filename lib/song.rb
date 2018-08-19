@@ -25,8 +25,10 @@ def self.new_by_name(name)
 
 
 def self.create_by_name(name)
-  @@all <<  self.new
-
+  ong = self.new
+  song.name = name
+  song
+  @@all << song
 
 
   end
